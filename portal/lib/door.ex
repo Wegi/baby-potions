@@ -1,4 +1,4 @@
-defmodule Portal.door do
+defmodule Portal.Door do
   @doc """
   Starts a door with the given color.
    The color is given as a name so we can identify the
