@@ -29,6 +29,13 @@ defmodule Portal do
   end
 
   @doc """
+  Shoots a new door with the fiven color.
+  """
+  def shoot(color) do
+    Supervisor.start_child(Portal.Supervisor, [color])
+  end
+
+  @doc """
   Pushes data to the right in the given 'portal'.
   """
   def push_right(portal) do
